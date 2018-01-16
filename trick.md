@@ -7,12 +7,32 @@
    奥秘在与没有任何内容重定向到文件中去
 
 2. echo.%str% 和 echo %str%  
-     当变量 str 的值为空时，echo.%str% 输出了一个空行，而 echo %str% 则返回 echo 的当前状态。
+   当变量 str 的值为空时，echo.%str% 输出了一个空行，而 echo %str% 则返回 echo 的当前状态。
 
-     当用 for 语句读取带空行的文本，并用 echo 语句来输出时，echo.%str% 语句无疑是上上之选  
+   当用 for 语句读取带空行的文本，并用 echo 语句来输出时，echo.%str% 语句无疑是上上之选
 
-3. cd.&gt;test.txt
+3. cmd窗口检测  
+   【如果有误，把中文冒号换成英文冒号】
 
-4. 
+   \#1. 如果系统采用的是系统管理员默认名：那么在taskmgr的应用程序选项卡中 每个窗口前会有"管理员： "
+
+   \#2. 如果系统采用的是系统管理员默认名：那么在taskmgr的应用程序选项卡中 窗口名不包括"管理员： "
+
+   \#3. 英文版是"Administrator: "  
+   \`\`\`  
+   taskkill /fi "WINDOWTITLE eq 管理员:  （\*" &gt;nul 2&gt;nul
+
+   ::taskkill /fi "WINDOWTITLE eq （\*" &gt;nul 2&gt;nul
+
+
+
+   tasklist /fi "WINDOWTITLE eq 管理员:  T\*" \| find "cmd.exe"&gt;nul
+
+   if errorlevel 1 start ctl.bat
+
+   \`\`\`  
+
+1. 
+2. 
 
 
