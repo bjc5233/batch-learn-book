@@ -19,18 +19,18 @@
    \#2. 如果系统采用的是系统管理员默认名：那么在taskmgr的应用程序选项卡中 窗口名不包括"管理员： "
 
    \#3. 英文版是"Administrator: "  
-   \`\`\`  
-   taskkill /fi "WINDOWTITLE eq 管理员:  （\*" &gt;nul 2&gt;nul
+   \``  
+   werwe  
+   `
 
-   ::taskkill /fi "WINDOWTITLE eq （\*" &gt;nul 2&gt;nul
+4. 
 
 
 
-   tasklist /fi "WINDOWTITLE eq 管理员:  T\*" \| find "cmd.exe"&gt;nul
 
-   if errorlevel 1 start ctl.bat
 
-   \`\`\`  
+
+
 
 1. 
 2. 
