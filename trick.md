@@ -6,9 +6,13 @@
 
    奥秘在与没有任何内容重定向到文件中去
 
-2. 
-3.    cd.&gt;test.txt
+2. echo.%str% 和 echo %str%  
+     当变量 str 的值为空时，echo.%str% 输出了一个空行，而 echo %str% 则返回 echo 的当前状态。
 
-1. 
+     当用 for 语句读取带空行的文本，并用 echo 语句来输出时，echo.%str% 语句无疑是上上之选  
+
+3. cd.&gt;test.txt
+
+4. 
 
 
